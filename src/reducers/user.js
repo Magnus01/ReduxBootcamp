@@ -10,7 +10,7 @@ export default function userReducer(state = {
 // Show Chart
             case "SHOW_List":
 
-                state = {...state, showlist : action.payload};
+                state = {...state, showlist : !state.showlist};
                 break;
 
 /////////////Second

@@ -15,7 +15,8 @@ class First extends React.Component {
 
         this.props.showlist();
 
-        this.props.showtable();
+        // setTimeout(() =>  this.props.showtable(), 5000);
+
 
     }
 
