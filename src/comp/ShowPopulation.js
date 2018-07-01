@@ -25,7 +25,7 @@ class First extends React.Component {
       <div>
         <h1> Show Population chart</h1>
         <button onClick={this.reactmethod}>
-        Click here to show Chart
+        Toggle Chart
         </button>
       </div>
     );
