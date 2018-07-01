@@ -1,26 +1,29 @@
 import React from "react";
 import { connect } from "react-redux";
-import {showlist } from '../actions/user';
+import {showlist, showtable } from '../actions/user';
 
 class First extends React.Component {
 
   constructor() {
         super();
-this.showlist=this.showlist.bind(this);
+    this.reactmethod=this.reactmethod.bind(this);
 
     }
 
 
-showlist(){
-this.props.showlist();
+    reactmethod(){
 
-}
+        this.props.showlist();
+
+        this.props.showtable();
+
+    }
 
   render() {
     return (
       <div>
         <h1> Show Population chart</h1>
-        <button onClick={this.props.showlist}>
+        <button onClick={this.reactmethod}>
         Click here to show Chart
         </button>
       </div>
@@ -29,12 +32,6 @@ this.props.showlist();
 }
 
 
-function mapStateToProps(state) {
-
-    return {
-        user: state.user
-    }
-}
 
 
-export default connect(mapStateToProps, {showlist})(First);
+export default connect(null, {showtable, showlist})(First);

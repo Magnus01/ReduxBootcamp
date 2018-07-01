@@ -1,5 +1,4 @@
-// This is mine Function ////
-//////////////////////////////////////
+
 export function showlist() {
   return dispatch => {
     dispatch({
@@ -8,6 +7,17 @@ export function showlist() {
     });
   };
 }
+
+
+export function showtable() {
+    return dispatch => {
+        dispatch({
+            type: "SHOW_List",
+            payload: false
+        });
+    };
+}
+
 
 export function oslo_population(value) {
   return dispatch => {

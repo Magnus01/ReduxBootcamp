@@ -1,9 +1,7 @@
 export default function userReducer(state = {
 
-
-                                        //mine
                                           showlist:false,
-                                          opopulation:500000,
+                                          population:500000,
 
                                       }, action) {
 
